@@ -95,6 +95,8 @@ public class Assignment2 {
             System.out.println("Invalid operator.");
         }
     }
+
+    
     public static void main(String[] args) {
         Assignment2 main = new Assignment2();
 //        main.calculator();
@@ -104,3 +106,4 @@ public class Assignment2 {
     }
 
 }
+
