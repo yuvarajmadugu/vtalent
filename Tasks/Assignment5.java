@@ -2,7 +2,7 @@ package Tasks;
 
 public class Assignment5 {
     //Input a character and use switch to check whether it is a vowel or consonant:
-    public char vowelorConsonent(char input){
+    public char vowelOrConsonent(char input){
         switch (input){
             case 'a','A', 'e','E', 'i','I', 'o','O', 'u','U':
                 System.out.println("Vowel");
@@ -54,7 +54,7 @@ public class Assignment5 {
         int[] arr = new int[]{1,2,3,4,5};
         for(int a: arr){
             if(a == num) {
-                System.out.println("Founnd");
+                System.out.println("Found");
                 break;
             }
         }
@@ -114,7 +114,7 @@ public class Assignment5 {
 
     public static void main(String[] args) {
         Assignment5 main = new Assignment5();
-//        main.vowelorConsonent('A');
+//        main.vowelOrConsonent('A');
 //        main.multiplicationTable();
 //        main.largestNumber();
 //        main.calculateSum();
