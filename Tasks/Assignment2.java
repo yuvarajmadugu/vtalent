@@ -96,7 +96,7 @@ public class Assignment2 {
         }
     }
     public static void main(String[] args) {
-        rough.Assignment2 main = new rough.Assignment2();
+        Assignment2 main = new Assignment2();
 //        main.calculator();
 //        main.checkNumEvenOrOdd();
 //        main.checkPrimeOrNot();
