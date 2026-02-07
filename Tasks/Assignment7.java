@@ -1,7 +1,5 @@
 package Tasks;
 
-import java.util.Arrays;
-
 public class Assignment7 {
 
     //Difference between Primitive and Non-Primitive Data Types :
@@ -44,14 +42,19 @@ public class Assignment7 {
     //String s="programming";
     public void findDuplicates(){
         String s = "programming";
-        String copy = s;
-        System.out.println("Duplicate characters: ");
+        char[] copy = s.toCharArray();
+        System.out.print("Duplicate characters: ");
+        int count=0;
 
-        for(int i=0; i< copy.length(); i++){
-            char ch = copy.charAt(i);
-            System.out.print(ch);
-
+        for(int i=0; i< copy.length; i++){
+            for(int j=0; j<i; j++){
+                if(copy[i] == copy[j]){
+                    count++;
+                    System.out.print(copy[i]+" ");
+                }
+            }
         }
+        System.out.println("Count : " +count);
     }
 
 
@@ -67,17 +70,45 @@ public class Assignment7 {
 
 
     //Remove Duplicate Elements from Array:
-    public void removeDuplicatesInArray(){
-        int[] arr = {1,2,2,3,4,4,5};
-        int[] arr2 = arr;
-        int[] arr3;
+    public void removeDuplicatesInArray() {
+        int[] arr = {1, 2, 2, 3, 4, 4, 5};
+        int[] temp = new int[arr.length];
+        int index = 0;
 
-        for (int i=1; i< arr.length-1; i++){
-            if(arr2[i] != arr[i]){
-                arr3 = ;
+        for (int i = 0; i < arr.length; i++) {
+            boolean isDuplicate = false;
+
+            for (int j = 0; j < index; j++) {
+                if (arr[i] == temp[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            if (!isDuplicate) {
+                temp[index] = arr[i];
+                index++;
             }
         }
-        System.out.println(Arrays.toString(arr2));
+
+        System.out.print("Array after removing duplicates: ");
+        for (int i = 0; i < index; i++) {
+            System.out.print(temp[i] + " ");
+        }
+    }
+
+
+
+    //Find First Non-Repeating Character
+    //String s = "swiss";
+    public void findNonRepeatingCharacters(){
+        String s= "swiss";
+        char[] chars = s.toCharArray();
+        for(int i=0; i< chars.length; i++){
+            for(int j=0; j<i; j++){
+                if(chars[i]== )
+            }
+        }
     }
 
 
@@ -87,8 +118,8 @@ public class Assignment7 {
 //        main.countEvenAndOdd();
 //        main.findDuplicates();
 //        main.SumOfFirstNNums();
-        main.removeDuplicatesInArray();
-
+//        main.removeDuplicatesInArray();
+        main.findNonRepeatingCharacters();
     }
 
 }
