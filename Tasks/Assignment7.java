@@ -120,6 +120,7 @@ public class Assignment7 {
 //        main.SumOfFirstNNums();
 //        main.removeDuplicatesInArray();
         main.findNonRepeatingCharacters();
+
     }
 
 }
