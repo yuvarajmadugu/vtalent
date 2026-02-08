@@ -38,22 +38,33 @@ public class Assignment1 {
 
 
         //armstrong number:
-        int number = 153;
-        //counting number of digits:
-        int count = 0;
-        int temp = number;
-        while (temp != 0){
+        int num = 153;
+
+        int originalNum = num;
+        int digits = 0;
+        int sum = 0;
+
+        //count digits
+        int temp = num;
+        while (temp != 0) {
+            digits++;
             temp /= 10;
-            count++;
-        }
-        System.out.println(count);
-        int numOfDigits = count;
-
-        //getting each digit of the given number:
-        String strNum = Integer.toString(number); //convert to string
-        for(int i=0; i<strNum.length(); i++){
-            System.out.println(strNum.charAt(i)); //print each character
         }
 
+        //calculate Armstrong sum
+        temp = num;
+        while (temp != 0) {
+            int digit = temp % 10;
+            sum += Math.pow(digit, digits);
+            temp /= 10;
+        }
+
+        //check num or not
+        if (sum == originalNum) {
+            System.out.println(originalNum + " is an Armstrong numb");
+        } else {
+            System.out.println(originalNum + " is NOT an Armstrong numb");
+        }
     }
 }
+
