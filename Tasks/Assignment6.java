@@ -86,14 +86,73 @@ public class Assignment6 {
     // *   *
     //  * *
     //   *
-    
+    public void hallowDiamond(int num){
+        for(int i=1; i<=num; i++){
+            for (int j=1; j<=num-i; j++){
+                System.out.print(" ");
+            }
+            for (int j=1; j<=i; j++){
+                if(j==1 || j==i) {
+                    System.out.print( " *");
+                }else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        for(int i=num-1; i>=1; i--){
+            for (int j=1; j<=num-i; j++){
+                System.out.print(" ");
+            }
+            for (int j=1; j<=i; j++){
+                if(j==1 || j==i) {
+                    System.out.print(" *");
+                }else {
+                    System.out.print( "  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    //         *
+    //       * *
+    //     * * *
+    //   * * * *
+    // * * * * *
+    public void rightTraingle(int num){
+        for(int i=1; i<=num; i++) {
+            for (int j=1; j<=num-i; j++){
+                System.out.print("  ");
+            }
+            for (int j=1; j<=i; j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+
+    public void characterCount(String input){
+        
+    }
+
+
+
 
     public static void main(String[] args) {
         Assignment6 main = new Assignment6();
 //        main.factorialUsingDoWhile();
 //        main.fibonacci();
 //        main.checkPalindrome();
-        main.invertedRightTraingle(5);
+//        main.invertedRightTraingle(5);
+//        main.hallowDiamond(5);
+//        main.rightTraingle(5);
+
+
+
+
+
     }
 
 }
