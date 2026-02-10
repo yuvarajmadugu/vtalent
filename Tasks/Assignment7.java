@@ -98,7 +98,7 @@ public class Assignment7 {
     }
 
 
-
+    /*
     //Find First Non-Repeating Character
     //String s = "swiss";
     public void findNonRepeatingCharacters(){
@@ -110,6 +110,7 @@ public class Assignment7 {
             }
         }
     }
+    */
 
 
     public static void main(String[] args) {
@@ -119,7 +120,12 @@ public class Assignment7 {
 //        main.findDuplicates();
 //        main.SumOfFirstNNums();
 //        main.removeDuplicatesInArray();
-        main.findNonRepeatingCharacters();
+//        main.findNonRepeatingCharacters();
+
+
+
+
+
 
     }
 

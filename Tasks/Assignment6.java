@@ -124,17 +124,27 @@ public class Assignment6 {
     public void rightTraingle(int num){
         for(int i=1; i<=num; i++) {
             for (int j=1; j<=num-i; j++){
-                System.out.print("  ");
+                System.out.print("  "); // here two spaces
             }
             for (int j=1; j<=i; j++){
-                System.out.print(" *");
+                System.out.print(" *"); // if here 1 space before *
             }
             System.out.println();
         }
     }
 
     public void characterCount(String input){
-        
+        int count = 0;
+        for (int i=0; i<input.length(); i++){
+            count++;
+        }
+        System.out.println("Total number of character in input: " +count);
+    }
+
+
+    //print first non-repeating char in a string:
+    public void firstNonRepeatingChar(String input){
+
     }
 
 
@@ -148,7 +158,7 @@ public class Assignment6 {
 //        main.invertedRightTraingle(5);
 //        main.hallowDiamond(5);
 //        main.rightTraingle(5);
-
+        main.characterCount("yuvi");
 
 
 

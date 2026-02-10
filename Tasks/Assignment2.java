@@ -96,9 +96,9 @@ public class Assignment2 {
         }
     }
     public static void main(String[] args) {
-        Assignment2 main = new Assignment2();
+        Assignment2 main = new  Assignment2();
 //        main.calculator();
-//        main.checkNumEvenOrOdd();
+//        main.checkNumEvenOrOdd(); 
 //        main.checkPrimeOrNot();
         main.compareTwoNum();
     }
